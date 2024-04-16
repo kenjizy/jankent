@@ -85,35 +85,37 @@ public class registF extends javax.swing.JFrame {
         ut = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(650, 450));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel1.setText("REGISTRATION FORM");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(239, 61, 164, 32));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(239, 61, 210, 32));
 
-        jLabel2.setText("First Name");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, -1, -1));
+        jLabel2.setText("First Name:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, -1, -1));
 
-        jLabel3.setText("Last Name");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, -1, -1));
+        jLabel3.setText("Last Name:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, -1, -1));
 
-        jLabel4.setText("Gmail");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, -1, -1));
+        jLabel4.setText("Email:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, -1, -1));
 
-        jLabel5.setText("UserName");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
+        jLabel5.setText("UserName:");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, -1, -1));
 
-        jLabel6.setText("PassWord");
+        jLabel6.setText("PassWord:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, -1, -1));
 
         jLabel7.setText("User Type");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, -1, -1));
-        getContentPane().add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 190, -1));
-        getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 190, -1));
-        getContentPane().add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 190, -1));
-        getContentPane().add(us, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 190, -1));
+        getContentPane().add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, 190, -1));
+        getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 190, -1));
+        getContentPane().add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 190, 190, -1));
+        getContentPane().add(us, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 190, -1));
         getContentPane().add(pw, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 190, -1));
 
         ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "user", "Admin", " " }));
@@ -125,7 +127,7 @@ public class registF extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, 80, 30));
 
         jButton2.setText("Register");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +135,10 @@ public class registF extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, 90, 30));
+
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 460));
 
         pack();
         setLocationRelativeTo(null);
@@ -226,6 +231,7 @@ public class registF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField ln;
     private javax.swing.JTextField mail;
     private javax.swing.JTextField pw;
